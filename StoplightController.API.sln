@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoplightController.API", "StoplightController.API\StoplightController.API.csproj", "{972566FD-D12C-42FA-B58A-5FCD964E609C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{972566FD-D12C-42FA-B58A-5FCD964E609C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{972566FD-D12C-42FA-B58A-5FCD964E609C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{972566FD-D12C-42FA-B58A-5FCD964E609C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{972566FD-D12C-42FA-B58A-5FCD964E609C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7C4E93D-FDDC-4B22-BF4B-AE24849B0E11}
+	EndGlobalSection
+EndGlobal
