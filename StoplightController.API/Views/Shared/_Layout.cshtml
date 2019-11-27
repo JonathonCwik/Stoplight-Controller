@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetLight Controller - @ViewBag.PageTitle</title>
+    <script src="js/site.min.js"></script>
+    <link rel="stylesheet" href="css/site.min.css">
+</head>
+<body id="@ViewBag.PageId">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Stoplight</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Modes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/manual">Manual</a>
+                        <a class="dropdown-item" href="/random">Random</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col" id="stoplight-preview">
+            <h3>Preview</h3>
+            <div class="trafficlight">
+                <div class="light red"></div>
+                <div class="light yellow"></div>
+                <div class="light green"></div>
+            </div>
+
+        </div>
+        <div class="col-8">
+            @RenderBody()
+        </div>
+    </div>
+</div>
+</body>
+</html>

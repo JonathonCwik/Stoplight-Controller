@@ -19,6 +19,7 @@ namespace StoplightController.API
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseEnvironment(args.Length == 0 || string.IsNullOrWhiteSpace(args[0]) ? "local" : args[0])
                 .UseStartup<Startup>();
     }
 }

@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "manual";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.PageId = "manual-mode";
+}
+
+<h1>Manual Mode</h1>
+<div class="container">
+    <div class="row">
+        <button class="btn btn-danger col-12 toggle-btn" onclick="manualController.toggleRed()">Toggle Red</button>
+        <button class="btn btn-warning col-12 toggle-btn" onclick="manualController.toggleYellow()">Toggle Yellow</button>
+        <button class="btn btn-success col-12 toggle-btn" onclick="manualController.toggleGreen()">Toggle Green</button>
+    </div>
+</div>
+

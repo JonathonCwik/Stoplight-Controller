@@ -1,0 +1,65 @@
+﻿#stoplight-preview {
+    text-align: center;
+    width: 25vw;
+}
+
+    #stoplight-preview .trafficlight {
+        background: #222;
+        background-image: linear-gradient(transparent 2%,#111 2%,transparent 3%,#111 30%);
+        width: calc(25vw);
+        height: calc(calc(calc(25vw - 35px) * 3) + 50px);
+        border-radius: 20px;
+        position: relative;
+        border: solid 5px #333;
+        margin: 10px auto;
+    }
+
+#stoplight-preview .trafficlight:after {
+    background: #222;
+    background-image: linear-gradient(-90deg, #222 0%, #444 30%, #000);
+    content: "";
+    width: calc(25vw / 4);
+    height: 1000px;
+    margin-left: -15px;
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+}
+
+#stoplight-preview .light {
+    background-size: 5px 5px;
+    width: calc(25vw - 35px);
+    height: calc(25vw - 35px);
+    border-radius: 50%;
+    position: absolute;
+    left: 13px;
+    opacity: .1;
+}
+
+#stoplight-preview .red {
+    background: red;
+    background-image: radial-gradient(brown, transparent);
+    top: 20px;
+    border: dotted 2px red;
+    box-shadow: 0 0 20px #111 inset, 0 0 10px red;
+}
+
+    #stoplight-preview .yellow {
+        background: yellow;
+        background-image: radial-gradient(orange, transparent);
+        border: dotted 2px yellow;
+        top: calc(25vw - 10px);
+        box-shadow: 0 0 20px #111 inset, 0 0 10px yellow;
+    }
+
+    #stoplight-preview .green {
+        background: green;
+        background-image: radial-gradient(lime, transparent);
+        border: dotted 2px lime;
+        top: calc(calc(calc(25vw - 30px) * 2) + 22px);
+        box-shadow: 0 0 20px #111 inset, 0 0 10px lime;
+    }
+
+#stoplight-preview .on {
+    opacity: 1;
+}
